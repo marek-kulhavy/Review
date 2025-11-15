@@ -15,7 +15,7 @@ type Review = {
 
 
 // Data recenzí
-const reviews: Review[] = [
+const reviewsData: Review[] = [
   {
     id: 1, 
     author: "Doubravovi",
@@ -39,7 +39,26 @@ const reviews: Review[] = [
   },
 ];
 
+export const ReviewSlider = () => {
+  // Stav aktuální recenzee
+  const [currentIndex, setCurrentIndex] = useState(0);
+
+  const currentReview = reviewsData[currentIndex];
+
+  // Funkce pro přechod na předchozí recenzi
+  const goToPrevious = () => {
+    const isFirstReview = currentIndex === 0;
+    const newIndex = isFirstReview ? reviewsData.length - 1 : currentIndex - 1;
+    setCurrentIndex(newIndex);
+  };
+
+  // Funkce pro přechod na následující recenzi
+  const goToNext = () => {
+    const isLastReview = currentIndex === reviewsData.length - 1;
+    const newIndex = isLastReview ? 0 : currentIndex + 1;
+    setCurrentIndex(newIndex);
+  };
 
 
 
-  
+}
