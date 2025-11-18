@@ -171,14 +171,14 @@ export const ReviewSlider = () => {
                   <button
                     onClick={goToPrevious}
                     aria-label="Předchozí recenze"
-                    className="bg-secondary rounded-full shadow-md text-purple-bg hover:bg-gray-300 transition-colors w-8 h-8 flex items-center justify-center"
+                    className="bg-secondary rounded-full shadow-md text-purple-bg w-8 h-8 flex items-center justify-center"
                   >
                     <ChevronLeft className="w-6 h-6" />
                   </button>
                   <button
                     onClick={goToNext}
                     aria-label="Další recenze"
-                    className="bg-purple-bg rounded-full shadow-md text-white hover:bg-opacity-90 transition-colors w-8 h-8 flex items-center justify-center"
+                    className="bg-purple-bg rounded-full shadow-md text-white w-8 h-8 flex items-center justify-center"
                   >
                     <ChevronRight className="w-6 h-6" />
                   </button>
@@ -192,11 +192,11 @@ export const ReviewSlider = () => {
               <div className="absolute left-0 top-0 bottom-0 w-1.5 md:w-1.5 bg-purple-bg"></div>
 
               <div className="pl-2 md:mt-4">
-                <h4 className="text-xl md:text-xl font-bold text-header-text">
+                <h4 className="text-l md:text-xl font-bold text-header-text">
                   {currentReview.author}
                 </h4>
-                <p className="text-date-text mb-4">{currentReview.date}</p>
-                <p className="text-gray-700 text-basic md:text-sm leading-relaxed line-clamp-5 md:line-clamp-4">
+                <p className=" text-date-text text-sm md:text-base mb-4">{currentReview.date}</p>
+                <p className="text-gray-700 text-sm md:text-base leading-relaxed line-clamp-5 md:line-clamp-4">
                   {currentReview.text}
                 </p>
               </div>
