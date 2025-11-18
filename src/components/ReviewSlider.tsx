@@ -130,8 +130,8 @@ export const ReviewSlider = () => {
 
             {/* Mobilní hlavička, MatAlarm a šipky */}
             <div className="flex justify-between items-center md:hidden ml-3">
-              <h3 className="text-logo-text text-lg">MatAlarm</h3>
-              <div className="flex gap-4">
+              <h3 className="text-logo-text text-base">MatAlarm</h3>
+              <div className="flex gap-2 mr-6">
                 <button
                   onClick={goToPrevious}
                   aria-label="Předchozí recenze"
@@ -150,7 +150,7 @@ export const ReviewSlider = () => {
             </div>
 
             {/* Recenze zákazníků - mobil verze */}
-            <h2 className="text-3xl md:text-4xl text-header-text mb-8 ml-3 md:hidden">
+            <h2 className="text-xl md:text-4xl text-header-text mb-8 ml-3 md:hidden">
               Recenze zákazníků
             </h2>
 
@@ -187,16 +187,16 @@ export const ReviewSlider = () => {
             </div>
 
             {/* Karta recenze */}
-            <div className="bg-primary md:bg-review-bg shadow-[0_0_20px_rgba(0,0,0,0.2)] md:shadow-[5px_5px_20px_rgba(0,0,0,0.2)] p-8 md:p-8 relative overflow-hidden min-h-[280px] md:min-h-[210px] md:h-[210px] max-w-[95%] md:max-w-[746px] z-10 md:-ml-44 md:top-24">
+            <div className="bg-primary md:bg-review-bg shadow-[0_0_20px_rgba(0,0,0,0.2)] md:shadow-[5px_5px_20px_rgba(0,0,0,0.2)] p-6 md:p-8 relative overflow-hidden h-[280px] md:min-h-[210px] md:h-[210px] max-w-[95%] md:max-w-[746px] z-10 md:-ml-44 md:top-24">
               {/* Fialový pruh */}
               <div className="absolute left-0 top-0 bottom-0 w-1.5 md:w-1.5 bg-purple-bg"></div>
 
-              <div className="pl-3 md:mt-4">
-                <h4 className="text-2xl md:text-xl font-bold text-header-text">
+              <div className="pl-2 md:mt-4">
+                <h4 className="text-xl md:text-xl font-bold text-header-text">
                   {currentReview.author}
                 </h4>
                 <p className="text-date-text mb-4">{currentReview.date}</p>
-                <p className="text-gray-700 text-lg md:text-sm leading-relaxed md:line-clamp-4">
+                <p className="text-gray-700 text-lg md:text-sm leading-relaxed line-clamp-5 md:line-clamp-4">
                   {currentReview.text}
                 </p>
               </div>
