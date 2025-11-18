@@ -135,16 +135,16 @@ export const ReviewSlider = () => {
                 <button
                   onClick={goToPrevious}
                   aria-label="Předchozí recenze"
-                  className="bg-secondary rounded-full shadow-md text-purple-bg hover:bg-gray-100 transition-colors w-8 h-8 flex items-center justify-center"
+                  className="bg-secondary rounded-full shadow-md text-purple-bg hover:bg-gray-100 transition-colors w-7 h-7 flex items-center justify-center"
                 >
-                  <ChevronLeft className="w-6 h-6" />
+                  <ChevronLeft className="w-5 h-5 stroke-2" />
                 </button>
                 <button
                   onClick={goToNext}
                   aria-label="Další recenze"
-                  className="bg-purple-bg rounded-full shadow-md text-white hover:bg-opacity-90 transition-colors w-8 h-8 flex items-center justify-center"
+                  className="bg-purple-bg rounded-full shadow-md text-white hover:bg-opacity-90 transition-colors w-7 h-7 flex items-center justify-center"
                 >
-                  <ChevronRight className="w-6 h-6 stroke-2" />
+                  <ChevronRight className="w-5 h-5 stroke-2" />
                 </button>
               </div>
             </div>
@@ -187,7 +187,7 @@ export const ReviewSlider = () => {
             </div>
 
             {/* Karta recenze */}
-            <div className="bg-primary md:bg-review-bg shadow-[0_0_20px_rgba(0,0,0,0.2)] md:shadow-[5px_5px_20px_rgba(0,0,0,0.2)] p-6 md:p-8 relative overflow-hidden h-[280px] md:min-h-[210px] md:h-[210px] max-w-[95%] md:max-w-[746px] z-10 md:-ml-44 md:top-24">
+            <div className="bg-primary md:bg-review-bg shadow-[0_0_20px_rgba(0,0,0,0.2)] md:shadow-[5px_5px_20px_rgba(0,0,0,0.2)] p-6 md:p-8 relative overflow-hidden h-[220px] md:min-h-[210px] md:h-[210px] max-w-[95%] md:max-w-[746px] z-10 md:-ml-44 md:top-24">
               {/* Fialový pruh */}
               <div className="absolute left-0 top-0 bottom-0 w-1.5 md:w-1.5 bg-purple-bg"></div>
 
@@ -196,7 +196,7 @@ export const ReviewSlider = () => {
                   {currentReview.author}
                 </h4>
                 <p className="text-date-text mb-4">{currentReview.date}</p>
-                <p className="text-gray-700 text-lg md:text-sm leading-relaxed line-clamp-5 md:line-clamp-4">
+                <p className="text-gray-700 text-basic md:text-sm leading-relaxed line-clamp-5 md:line-clamp-4">
                   {currentReview.text}
                 </p>
               </div>
