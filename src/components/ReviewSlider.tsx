@@ -135,14 +135,14 @@ export const ReviewSlider = () => {
                 <button
                   onClick={goToPrevious}
                   aria-label="Předchozí recenze"
-                  className="bg-secondary rounded-full shadow-md text-purple-bg hover:bg-gray-100 transition-colors w-7 h-7 flex items-center justify-center"
+                  className="bg-secondary rounded-full shadow-md text-purple-bg w-7 h-7 flex items-center justify-center"
                 >
                   <ChevronLeft className="w-5 h-5 stroke-2" />
                 </button>
                 <button
                   onClick={goToNext}
                   aria-label="Další recenze"
-                  className="bg-purple-bg rounded-full shadow-md text-white hover:bg-opacity-90 transition-colors w-7 h-7 flex items-center justify-center"
+                  className="bg-purple-bg rounded-full shadow-md text-white w-7 h-7 flex items-center justify-center"
                 >
                   <ChevronRight className="w-5 h-5 stroke-2" />
                 </button>
